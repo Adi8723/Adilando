@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 106, 53);
+}
+
+nav i {
+    font-size: 26px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    padding: 3px;
+}
+
+.body {
+    display: flex;
+}
+
+.right {
+    height: 100vh;
+    width: 35%;
+    position: sticky;
+    top: 0;
+    box-shadow: -2px 0 2px #E5E6E8;
+}
+
+.basket-title {
+    padding: 16px;
+    margin: 0;
+    text-align: center;
+    color: #0A3947;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.right h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#content {
+    overflow-y: scroll;
+}
+
+.right .case {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.right .case i {
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+.right .case h3 {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.right .case p {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.left {
+    height: 6000px;
+    width: 65%;
+}
+
+.left img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-position: bottom;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    margin-left: 20px;
+}
+
+.left .logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: -100px;
+}
+
+.logo span {
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herz {
+    margin-right: 18px;
+}
+
+.herz div {
+    border: 1px solid gray;
+}
+
+.herz i {
+    margin: 10px;
+    padding: 5px;
+}
+
+.herz {
+    display: flex;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.star p {
+    margin-left: 20px;
+    color: orange;
+}
+
+.menu {
+    height: 50px;
+    background-color: rgb(212, 211, 211);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+}
+
+.menu i {
+    margin-left: 20px;
+}
+
+.menu p {
+    white-space: nowrap;
+    padding: 0 20px;
+    width: 200px;
+}
+
+.textCenter {
+    background-color: rgb(212, 211, 211);
+    height: 50px;
+    width: 96%;
+    margin: auto;
+}
+
+.favMeal {
+    display: flex;
+    align-items: center;
+}
+
+.favMeal h2 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card {
+    width: 96%;
+    border: 1px solid lightgray;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.nameOfFood {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nameOfFood a {
+    text-decoration: none;
+    color: rgb(54, 121, 144);
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.card p {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+#price {
+    color: orangered;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 23px;
+}
+
+footer {
+    height: 64px;
+    background-color: lightseagreen;
+}
+
+.korb {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.warenName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns a {
+    color: lightskyblue;
+}
+
+.btns i {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btns button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin-left: 20px;
+    color: lightskyblue;
+}
+
+.benBetr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benBetr p {
+    max-width: 300px;
+    opacity: .6;
+    font-size: 12px;
+}
+
+.benBetr span {
+    font-size: 12px;
+}
+
+.d-none {
+    display: none;
+}
+
+.lieferKostenPr {
+    margin: 20px;
+}
+
+.lieferKostenPr p {
+    font-size: 12px;
+}
+
+.foodcontent {
+    margin: 20px;
+}
+
+.Zwischensumme {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Lieferkosten {
+    justify-content: space-between;
+    display: flex;
+}
+
+.Gesamt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bezahlBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.bezahlen {
+    width: 90%;
+    height: 70px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.basketCalc {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basketCalc h4 {
+    margin: 0;
+}
