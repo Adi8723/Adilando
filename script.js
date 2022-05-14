@@ -7,9 +7,9 @@ let basketPrice = []
 let basketDescription = []
 let basketAmount = []
 let lieferkosten = 3.00
-let enabele = true
 
 function load() {
+    loadBasket();
     render();
     renderfullBasket();
     TemplateEmptyBasket();
@@ -36,6 +36,7 @@ function addfood(i) {
         basketAmount[index]++
     }
     renderfullBasket();
+    saveBasket();
 }
 
 function renderfullBasket() {
@@ -86,6 +87,7 @@ function decrease(i) {
         }
 
     renderfullBasket()
+    saveBasket()
 
 }
 
@@ -93,7 +95,8 @@ function decrease(i) {
 
 function increase(i) {
     basketAmount[i]++
-        renderfullBasket()
+    renderfullBasket()
+    saveBasket();
 }
 
 function deletefood(i) {
@@ -102,7 +105,31 @@ function deletefood(i) {
     basketFood.splice(i, 1)
     basketPrice.splice(i, 1)
     renderfullBasket()
+    saveBasket();
+}
 
+function saveBasket() {
+    let basketFoodasText = JSON.stringify(basketFood)
+    let basketPriceasText = JSON.stringify(basketPrice)
+    let basketAmountasText = JSON.stringify(basketAmount)
+
+
+    localStorage.setItem('basketFood', basketFoodasText)
+    localStorage.setItem('basketPrice', basketPriceasText)
+    localStorage.setItem('basketAmount', basketAmountasText)
+}
+ 
+function loadBasket() { 
+    let basketFoodasText = localStorage.getItem('basketFood')
+    if (basketFoodasText) { basketFood = JSON.parse(basketFoodasText) }
+    
+    let basketPriceasText = localStorage.getItem('basketPrice');
+    if (basketPriceasText) { 
+        basketPrice = JSON.parse(basketPriceasText)
+    }
+ 
+    let basketAmountasText = localStorage.getItem('basketAmount');
+    if (basketAmountasText) { basketAmount = JSON.parse(basketAmountasText)}
 }
 
 function tamplateDishes(i) {
